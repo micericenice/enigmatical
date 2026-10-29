@@ -14,33 +14,38 @@ int x = 10,
     y = 20,
     z = 54;
 
-int age = -23;
+string textAge = "-23";
+int age = Convert.ToInt32(textAge);
 Console.WriteLine(age);
 Console.WriteLine(int.MaxValue);
 Console.WriteLine(int.MinValue);
 
-long bigNumber = -123456789L;
+string textBigNumber = "123456789";
+long bigNumber = Convert.ToInt64(textBigNumber);
 Console.WriteLine(bigNumber);
 Console.WriteLine(long.MaxValue);
 Console.WriteLine(long.MinValue);
 
-double negative = -55.2D;
+string textNegative = "-55.2";
+double negative = Convert.ToDouble(textNegative);
 Console.WriteLine(negative);
 Console.WriteLine(double.MaxValue);
 Console.WriteLine(double.MinValue);
 
-float precision = 5.000001F;
+string textPrecision = "5.000001";
+float precision = Convert.ToSingle(textPrecision);
 Console.WriteLine(precision);
 Console.WriteLine(float.MaxValue);
 Console.WriteLine(float.MinValue);
 
-decimal money = 15.99M;
+string textMoney = "15.99";
+decimal money = Convert.ToDecimal(textMoney);
 Console.WriteLine(money);
 Console.WriteLine(decimal.MaxValue);
 Console.WriteLine(decimal.MinValue);
 
-age = 50;
-
 Textbook.Run();
+Booleans.Run();
+Ops.Run();
 
 Console.ReadLine();
